@@ -97,6 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text(
               'You have pushed the button this many times:',
+              style:
+                  TextStyle(color: Colors.purple, fontWeight: FontWeight.bold),
             ),
             Text(
               '$_counter',
@@ -106,7 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.green,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
